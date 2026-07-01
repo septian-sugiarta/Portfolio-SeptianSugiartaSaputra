@@ -24,18 +24,6 @@
     ],
   },
   {
-    role: "UI/UX Designer",
-    period: "Personal Project",
-    type: "Mavera's Website",
-    group: "uiux",
-    stack: ["UI/UX Design", "Restaurant Website", "Reservation Flow", "Prototype"],
-    highlights: [
-      "Designed the user interface and user experience for a chicken geprek restaurant website with a focus on clear information structure and practical customer access.",
-      "Structured the main user flow for exploring food menus, viewing restaurant information, making reservations, and contacting the business through a simple and consistent navigation pattern.",
-      "Prepared desktop website layouts and interactive prototype screens that present the brand, menu selection, reservation form, about page, and contact section in a clean visual direction suitable for a culinary business.",
-    ],
-  },
-  {
     role: "Front End Developer",
     period: "Mar 2024 - Nov 2024 (9 Months)",
     type: "KSM Android UPNVJ",
@@ -50,7 +38,7 @@
   {
     role: "UI/UX Designer",
     period: "Personal Project",
-    type: "S Mart",
+    type: "S-Mart",
     group: "uiux",
     stack: ["UI/UX Design", "RFID Concept", "Prototype", "User Flow"],
     highlights: [
@@ -69,6 +57,18 @@
       "Developed a mobile application concept that introduces sustainable fashion choices through accessible product and brand information.",
       "Structured the brand discovery and recommendation flow so users could compare options and understand the intended value of each feature.",
       "Completed the interface prototype and supporting pitch deck to communicate the product concept, user journey, and design direction.",
+    ],
+  },
+  {
+    role: "UI/UX Designer",
+    period: "Personal Project",
+    type: "Mavera's Website",
+    group: "uiux",
+    stack: ["UI/UX Design", "Restaurant Website", "Reservation Flow", "Prototype"],
+    highlights: [
+      "Designed the user interface and user experience for a chicken geprek restaurant website with a focus on clear information structure and practical customer access.",
+      "Structured the main user flow for exploring food menus, viewing restaurant information, making reservations, and contacting the business through a simple and consistent navigation pattern.",
+      "Prepared desktop website layouts and interactive prototype screens that present the brand, menu selection, reservation form, about page, and contact section in a clean visual direction suitable for a culinary business.",
     ],
   },
 ];
