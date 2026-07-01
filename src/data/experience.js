@@ -42,7 +42,7 @@
     group: "uiux",
     stack: ["UI/UX Design", "RFID Concept", "Prototype", "User Flow"],
     highlights: [
-      "Designed an RFID-based supermarket application concept based on a structured shopping journey and common in-store activities.",
+      "Prepared an RFID-based supermarket application concept based on a structured shopping journey and common in-store activities.",
       "Prepared user flows for product discovery, item scanning, cart management, and checkout to reduce unnecessary steps during shopping.",
       "Produced interface designs and an interactive prototype to demonstrate the proposed product experience and core functions.",
     ],
