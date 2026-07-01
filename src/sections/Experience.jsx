@@ -7,12 +7,10 @@ const experienceGroups = [
   {
     key: "web",
     title: "Web Developer Experience",
-    description: "Experience in application development, ERP maintenance, and front-end implementation.",
   },
   {
     key: "uiux",
     title: "UI/UX Experience",
-    description: "Independent product design work covering research direction, user flows, interface design, and prototyping.",
   },
 ];
 
@@ -56,7 +54,7 @@ function Experience() {
                                 <span className="font-mono text-sm text-indigo-300">EXP_{String(index + 1).padStart(2, "0")}</span>
                                 <span className="size-2.5 rounded-full bg-emerald-400 shadow-[0_0_14px_rgba(52,211,153,0.6)]" />
                               </div>
-                              <p className="mt-10 text-xs font-bold uppercase tracking-[0.2em] text-slate-400">Organization</p>
+                              <p className="mt-10 text-xs font-bold uppercase tracking-[0.2em] text-slate-400">Company / Organization</p>
                               <p className="mt-3 text-lg font-bold leading-7 text-white">{experience.type}</p>
                             </div>
                             <span className="mt-8 w-fit rounded-full border border-slate-700 bg-slate-800 px-4 py-2 text-xs font-bold text-slate-300">

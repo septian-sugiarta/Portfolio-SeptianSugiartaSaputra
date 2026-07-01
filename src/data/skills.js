@@ -1,4 +1,5 @@
 import {
+  SiCanva,
   SiExpress,
   SiFigma,
   SiGit,
@@ -45,7 +46,8 @@ export const skillGroups = [
     description: "Preparing interface concepts, user flows, and interactive prototypes based on product requirements and usability considerations.",
     skills: [
       { name: "Figma", icon: SiFigma },
-      { name: "Prototype", icon: TbPresentationAnalytics },
+      { name: "Canva", icon: SiCanva },
+      { name: "Prototyping", icon: TbPresentationAnalytics }
     ],
   },
   {
@@ -54,7 +56,7 @@ export const skillGroups = [
     skills: [
       { name: "Communication", icon: TbMessage2 },
       { name: "Adaptive", icon: TbUsers },
-      { name: "Public Speaking", icon: TbPresentationAnalytics },
+      { name: "Public Speaking", icon: TbUsers },
     ],
   },
 ];

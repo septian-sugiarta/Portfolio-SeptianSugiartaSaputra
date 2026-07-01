@@ -1,7 +1,7 @@
 ﻿export const experiences = [
   {
     role: "Full Stack Developer Intern",
-    period: "6 Months",
+    period: "Apr 2025 - Aug 2025 (6 Months)",
     type: "PT GMF AeroAsia",
     group: "web",
     stack: ["Full Stack Development", "Web Application", "Frontend", "Backend"],
@@ -13,7 +13,7 @@
   },
   {
     role: "Python Programmer Intern",
-    period: "Internship",
+    period: "May 2024 - Oct 2024 (6 Months)",
     type: "PT Sinergi Informatika Semen Indonesia",
     group: "web",
     stack: ["Python", "Odoo Enterprise", "ERP Maintenance", "Business Process"],
@@ -24,8 +24,20 @@
     ],
   },
   {
+    role: "UI/UX Designer",
+    period: "Personal Project",
+    type: "Mavera's Website",
+    group: "uiux",
+    stack: ["UI/UX Design", "Restaurant Website", "Reservation Flow", "Prototype"],
+    highlights: [
+      "Designed the user interface and user experience for a chicken geprek restaurant website with a focus on clear information structure and practical customer access.",
+      "Structured the main user flow for exploring food menus, viewing restaurant information, making reservations, and contacting the business through a simple and consistent navigation pattern.",
+      "Prepared desktop website layouts and interactive prototype screens that present the brand, menu selection, reservation form, about page, and contact section in a clean visual direction suitable for a culinary business.",
+    ],
+  },
+  {
     role: "Front End Developer",
-    period: "1 Year",
+    period: "Mar 2024 - Nov 2024 (9 Months)",
     type: "KSM Android UPNVJ",
     group: "web",
     stack: ["Frontend Development", "HTML", "CSS", "JavaScript", "UI Implementation"],
@@ -60,5 +72,4 @@
     ],
   },
 ];
-
 

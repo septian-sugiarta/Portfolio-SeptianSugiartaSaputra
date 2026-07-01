@@ -31,7 +31,7 @@ function Navbar() {
             SS
           </span>
           <span className="hidden text-sm font-bold tracking-wide text-slate-800 sm:inline">
-            Portfolio Website
+            Portfolio Websitegit p
           </span>
         </a>
 

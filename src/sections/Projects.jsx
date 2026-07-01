@@ -222,11 +222,20 @@ function Projects() {
     [activeFilter],
   );
 
-  const activeProject = filteredProjects[projectIndex];
+  const safeProjectIndex = filteredProjects.length
+    ? Math.min(projectIndex, filteredProjects.length - 1)
+    : 0;
+  const activeProject = filteredProjects[safeProjectIndex];
 
   useEffect(() => {
     setProjectIndex(0);
   }, [activeFilter]);
+
+  useEffect(() => {
+    if (projectIndex >= filteredProjects.length) {
+      setProjectIndex(0);
+    }
+  }, [filteredProjects.length, projectIndex]);
 
   useEffect(() => {
     if (isPaused || filteredProjects.length < 2) return undefined;
@@ -258,14 +267,23 @@ function Projects() {
   };
 
   const showPreviousProject = () => {
-    setProjectIndex((current) =>
-      current === 0 ? filteredProjects.length - 1 : current - 1,
-    );
+    if (!filteredProjects.length) return;
+
+    setProjectIndex((current) => {
+      const normalizedIndex = Math.min(current, filteredProjects.length - 1);
+      return normalizedIndex === 0 ? filteredProjects.length - 1 : normalizedIndex - 1;
+    });
   };
 
   const showNextProject = () => {
+    if (!filteredProjects.length) return;
+
     setProjectIndex((current) => (current + 1) % filteredProjects.length);
   };
+
+  if (!activeProject) {
+    return null;
+  }
 
   return (
     <section id="projects" className="py-24 sm:py-28">
@@ -372,19 +390,19 @@ function Projects() {
                         key={project.title}
                         type="button"
                         onClick={() => setProjectIndex(index)}
-                        aria-current={index === projectIndex ? "true" : undefined}
+                        aria-current={index === safeProjectIndex ? "true" : undefined}
                         className={`focus-ring group/item flex items-center gap-4 rounded-2xl border p-4 text-left transition cursor-pointer ${
-                          index === projectIndex
+                          index === safeProjectIndex
                             ? "border-indigo-500/60 bg-indigo-500/10"
                             : "border-slate-800 bg-slate-900/60 hover:border-slate-700 hover:bg-slate-900"
                         }`}
                       >
-                        <span className={`font-mono text-xs ${index === projectIndex ? "text-indigo-300" : "text-slate-600"}`}>0{index + 1}</span>
+                        <span className={`font-mono text-xs ${index === safeProjectIndex ? "text-indigo-300" : "text-slate-600"}`}>0{index + 1}</span>
                         <span className="min-w-0 flex-1">
-                          <span className={`block truncate text-sm font-bold ${index === projectIndex ? "text-white" : "text-slate-300"}`}>{project.title}</span>
+                          <span className={`block truncate text-sm font-bold ${index === safeProjectIndex ? "text-white" : "text-slate-300"}`}>{project.title}</span>
                           <span className="mt-1 block text-xs text-slate-500">{project.label}</span>
                         </span>
-                        <HiArrowTopRightOnSquare className={`shrink-0 ${index === projectIndex ? "text-indigo-300" : "text-slate-700"}`} />
+                        <HiArrowTopRightOnSquare className={`shrink-0 ${index === safeProjectIndex ? "text-indigo-300" : "text-slate-700"}`} />
                       </button>
                     ))}
                   </div>
@@ -393,7 +411,7 @@ function Projects() {
                 <div className="mt-8">
                   <div className="mb-5 h-1 overflow-hidden rounded-full bg-slate-800">
                     <motion.div
-                      key={`${activeFilter}-${projectIndex}-${isPaused}`}
+                      key={`${activeFilter}-${safeProjectIndex}-${isPaused}`}
                       className="h-full origin-left bg-indigo-500"
                       initial={{ scaleX: 0 }}
                       animate={{ scaleX: isPaused ? 0 : 1 }}
@@ -405,7 +423,7 @@ function Projects() {
                       <HiChevronLeft />
                     </button>
                     <p className="font-mono text-xs text-slate-500">
-                      {String(projectIndex + 1).padStart(2, "0")} / {String(filteredProjects.length).padStart(2, "0")}
+                      {String(safeProjectIndex + 1).padStart(2, "0")} / {String(filteredProjects.length).padStart(2, "0")}
                     </p>
                     <button type="button" onClick={showNextProject} aria-label="Next project" className="focus-ring grid size-11 place-items-center rounded-full border border-slate-700 text-xl text-slate-300 transition hover:border-indigo-400 hover:text-white cursor-pointer">
                       <HiChevronRight />
