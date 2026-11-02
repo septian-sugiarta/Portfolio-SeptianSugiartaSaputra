@@ -2,8 +2,8 @@ export const projects = [
   {
     title: "SINJAM UPNVJ",
     description:
-      "A web-based facility borrowing system for UPN Veteran Jakarta that organizes reservation requests, facility information, and administrative approval in one workflow.",
-    stack: ["Web Development", "Full Stack", "Facility System"],
+      "A web-based facility borrowing system for UPN Veteran Jakarta that organizes reservation requests, facility information, and administrative approval in one streamlined workflow.",
+    stack: ["React.js", "Express.js", "MySQL", "REST API", "Full Stack"],
     liveUrl: "https://sinjamupnvj-demo.vercel.app/",
     repoUrl: "#",
     accent: "from-[#1b1714] via-[#d97706] to-[#22d3ee]",
@@ -18,14 +18,14 @@ export const projects = [
     },
   },
   {
-    title: "ScabiTren",
+    title: "ScabiTren (KMS Pesantren)",
     description:
-      "A Knowledge Management System designed for boarding schools to record, monitor, and distribute information related to scabies diagnosis, prevention, and treatment.",
-    stack: ["Web Development", "Full Stack", "KMS Portal"],
+      "Comprehensive full-stack Knowledge Management System (KMS) delivering 140+ responsive web pages and 7 core features tailored for 7 distinct user roles, supported by a 45+ table relational database, 90+ REST API routes, and 120+ blackbox test cases.",
+    stack: ["React.js", "Express.js", "MySQL", "RESTful API", "Full Stack", "Agile/Scrum"],
     liveUrl: "https://scabitren-demo.vercel.app/",
     accent: "from-[#16100f] via-[#16a34a] to-[#f97316]",
     metric: "02",
-    label: "Full Stack Developer",
+    label: "Full Stack Developer (Final Project)",
     category: "Web Developer",
     group: "web",
     primaryAction: "Demo",
@@ -34,13 +34,13 @@ export const projects = [
   {
     title: "S-Mart",
     description:
-      "A mobile application concept that applies RFID technology to support product discovery, in-store navigation, and a more efficient supermarket checkout process.",
-    stack: ["UI/UX Design", "Figma", "Prototype", "RFID Concept"],
+      "RFID-based supermarket application featuring a structured 30+ component Design System, comprehensive user flows for item scanning and checkout, and high-fidelity interactive prototypes with standardized CSS variables.",
+    stack: ["Design System", "Figma", "UI/UX Prototyping", "User Flows", "RFID Concept"],
     liveUrl: "#",
     repoUrl: "#",
     accent: "from-[#15100f] via-[#a3e635] to-[#22d3ee]",
     metric: "03",
-    label: "UI/UX Designer",
+    label: "UI/UX & Frontend Prototyper",
     category: "UI/UX Designer",
     group: "uiux",
     primaryAction: "Prototype",
@@ -64,8 +64,8 @@ export const projects = [
   {
     title: "TERRAFIT",
     description:
-      "A sustainable fashion application concept that helps users discover responsible brands and consider the environmental impact of their clothing choices.",
-    stack: ["UI/UX Design", "Figma", "Prototype", "Wireframe"],
+      "Sustainable fashion mobile application concept that helps conscious consumers discover responsible brands, evaluate clothing sustainability, and compare transparent metrics.",
+    stack: ["UI/UX Design", "Figma", "Interactive Prototype", "User Flow"],
     liveUrl: "#",
     repoUrl: "#",
     accent: "from-[#120f12] via-[#2dd4bf] to-[#f472b6]",
@@ -88,7 +88,7 @@ export const projects = [
   {
     title: "Mavera's Website",
     description:
-      "A restaurant website concept that presents menu information, business details, and a reservation flow through a clear and consistent desktop interface.",
+      "Modern restaurant website interface featuring a streamlined online table reservation flow, categorized food menu showcase, and polished brand presentation for desktop devices.",
     stack: ["UI/UX Design", "Figma", "Prototype", "Web Design"],
     liveUrl: "#",
     repoUrl: "#",
@@ -109,8 +109,3 @@ export const projects = [
     ],
   },
 ];
-
-
-
-
-

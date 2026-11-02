@@ -11,7 +11,7 @@ function Contact() {
           <SectionHeading
             eyebrow="Contact"
             title="Open to professional opportunities and collaboration."
-            description="For internship opportunities, project discussions, or professional collaboration, please contact me through one of the channels below."
+            description="Actively seeking professional opportunities as a Junior Software Engineer or Web Developer. Reach out for career opportunities, technical discussions, or collaborations."
             align="center"
           />
           <div className="grid gap-4 md:grid-cols-2">
@@ -47,6 +47,3 @@ function Contact() {
 }
 
 export default Contact;
-
-
-

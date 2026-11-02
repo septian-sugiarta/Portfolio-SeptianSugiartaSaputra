@@ -39,7 +39,7 @@ function Hero() {
             Septian Sugiarta Saputra
           </p>
           <h1 className="max-w-5xl text-4xl font-black leading-[1.08] tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
-            Web Developer <span className="text-indigo-600 block">and UI/UX Designer</span>
+            Junior Software Engineer <span className="text-indigo-600 block">& Web Developer</span>
           </h1>
 
           {/* IT Mono Typing Line */}
@@ -49,13 +49,13 @@ function Hero() {
             <span className="text-indigo-500">=</span>
             <span className="text-slate-400">[</span>
             <span className="typing-container text-indigo-600 font-bold px-1 bg-indigo-50 rounded border border-indigo-100">
-              "Developer", "Designer", "Problem-Solver"
+              "Junior Software Engineer", "Web Developer", "System Analyst"
             </span>
             <span className="text-slate-400">];</span>
           </div>
 
           <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600 sm:text-lg">
-            Eighth-semester Information Systems student with experience in front-end development, interface design, and the implementation of web-based systems.
+            Information Systems graduate from UPN Veteran Jakarta (GPA: 3.83/4.00) and BNSP-Certified System Analyst with internship experience developing full-stack web applications, scalable RESTful APIs, and responsive interfaces.
           </p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <Button href="#projects">
@@ -67,9 +67,9 @@ function Hero() {
           </div>
           <div className="mt-10 grid max-w-xl grid-cols-3 gap-3">
             {[
-              ["UPNVJ", "Information Systems"],
-              ["GMF AeroAsia", "Internship"],
-              ["PT SISI", "Internship"],
+              ["3.83 GPA", "UPNVJ Graduate"],
+              ["GMF AeroAsia", "Full Stack Intern"],
+              ["BNSP", "Certified Analyst"],
             ].map(([value, label]) => (
               <div key={label} className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
                 <p className="text-lg font-black text-slate-900">{value}</p>
@@ -87,6 +87,3 @@ function Hero() {
 }
 
 export default Hero;
-
-
-

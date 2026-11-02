@@ -6,11 +6,13 @@ import { experiences } from "../data/experience.js";
 const experienceGroups = [
   {
     key: "web",
-    title: "Web Developer Experience",
+    title: "Software & Web Development Experience",
+    description: "Hands-on internships and technical roles engineering scalable dashboards, enterprise APIs, and responsive frontends.",
   },
   {
     key: "uiux",
-    title: "UI/UX Experience",
+    title: "UI/UX & Prototyping Experience",
+    description: "Design system architecture, user flow mapping, and interactive high-fidelity prototypes for digital products.",
   },
 ];
 
@@ -21,7 +23,7 @@ function Experience() {
         <SectionHeading
           eyebrow="Experience"
           title="Professional, organizational, and project experience."
-          description="Responsibilities and lessons gained from internships, student organizations, academic work, and independent design projects."
+          description="Demonstrated track record across enterprise internships, agile engineering teams, and full-stack software development projects."
           align="center"
         />
         <div className="mx-auto grid max-w-5xl gap-14">
@@ -96,8 +98,3 @@ function Experience() {
 }
 
 export default Experience;
-
-
-
-
-

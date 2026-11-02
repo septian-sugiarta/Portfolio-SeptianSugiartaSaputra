@@ -291,7 +291,7 @@ function Projects() {
         <SectionHeading
           eyebrow="Selected projects"
           title="Selected work in development and interface design."
-          description="A selection of web systems and interface concepts completed through academic work, organizational activities, and independent projects."
+          description="A showcase of full-stack web applications, scalable database architectures, and structured design systems built to solve real-world problems."
         />
         <Reveal>
           <div

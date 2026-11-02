@@ -9,7 +9,7 @@ function Skills() {
         <SectionHeading
           eyebrow="Capabilities"
           title="Skills developed through study and practice."
-          description="The following capabilities have been developed through academic work, organizational responsibilities, internships, and independent projects."
+          description="Technical capabilities, engineering frameworks, and tools honed through academic excellence, BNSP certification, and professional software development."
           align="center"
         />
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
@@ -46,6 +46,3 @@ function Skills() {
 }
 
 export default Skills;
-
-
-

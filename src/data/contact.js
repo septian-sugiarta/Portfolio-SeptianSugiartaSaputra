@@ -1,4 +1,4 @@
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 
 export const contactLinks = [
@@ -16,14 +16,14 @@ export const contactLinks = [
   },
   {
     label: "GitHub",
-    value: "github.com/septiansugiartaa",
-    href: "https://github.com/septiansugiartaa",
+    value: "github.com/septian-sugiarta",
+    href: "https://github.com/septian-sugiarta",
     icon: FaGithub,
   },
   {
-    label: "Instagram",
-    value: "@septiansugiartaa",
-    href: "https://www.instagram.com/septiansugiartaa",
-    icon: FaInstagram,
+    label: "WhatsApp / Phone",
+    value: "081574364200",
+    href: "https://wa.me/6281574364200",
+    icon: FaWhatsapp,
   },
 ];

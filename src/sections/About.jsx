@@ -7,23 +7,23 @@ function About() {
       <div className="section-shell">
         <SectionHeading
           eyebrow="About me"
-          title="Building practical digital products through code and design."
-          description="My academic background and project experience have shaped the way I approach interface design, system development, and collaborative work."
+          title="Building robust, practical digital products through clean code and scalable architecture."
+          description="My academic background, BNSP System Analyst certification, and full-stack internship experience shape how I design and build modern software solutions."
         />
         <div className="grid gap-5 lg:grid-cols-[1.25fr_0.75fr]">
           <Reveal className="glass-panel rounded-[2rem] p-6 sm:p-8">
             <p className="text-lg leading-9 text-slate-600">
-              I am an eighth-semester Information Systems student at Universitas Pembangunan Nasional “Veteran” Jakarta with a strong interest in website development and UI/UX design. These fields allow me to combine structured problem-solving with a careful understanding of how people use digital products.
+              I am an Information Systems graduate from Universitas Pembangunan Nasional “Veteran” Jakarta (GPA: 3.83/4.00) and a BNSP-Certified System Analyst with internship experience developing full-stack web applications. Skilled in React.js, Next.js, Express.js, and NestJS, with hands-on experience in building responsive user interfaces, designing RESTful APIs, and implementing relational databases.
             </p>
             <p className="mt-5 text-lg leading-9 text-slate-600">
-              Over the past year, I have worked as a Front-End Developer through student organization activities, personal projects, and academic assignments. Each experience has strengthened my technical foundation, design judgment, and ability to work responsibly with others. I continue to seek professional and organizational opportunities where I can learn, contribute, and develop my capabilities further.
+              Having contributed to enterprise platforms at PT Garuda Maintenance Facility AeroAsia, PT Sinergi Informatika Semen Indonesia, and KSM Android UPNVJ, I have proven experience working within cross-functional Agile teams to translate complex business requirements into clean, scalable software. I am actively seeking professional opportunities as a Junior Software Engineer or Web Developer to deliver robust and reliable web applications.
             </p>
           </Reveal>
           <Reveal delay={0.08} className="grid gap-5">
             {[
-              ["Education", 'Information Systems, UPN "Veteran" Jakarta'],
-              ["Previous School", "SMA Negeri 1 Jakarta"],
-              ["Current Focus", "Web Development & UI/UX Design"],
+              ["Education", 'Information Systems, UPNVJ (GPA: 3.83)'],
+              ["Certification", "BNSP-Certified System Analyst"],
+              ["Target Roles", "Junior Software Engineer / Web Developer"],
             ].map(([label, value]) => (
               <div key={label} className="rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-sm transition hover:border-indigo-200 hover:shadow-md">
                 <p className="text-sm font-semibold uppercase tracking-[0.22em] text-indigo-600">
@@ -40,7 +40,3 @@ function About() {
 }
 
 export default About;
-
-
-
-
