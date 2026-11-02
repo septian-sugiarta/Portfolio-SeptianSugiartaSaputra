@@ -55,7 +55,7 @@ function Hero() {
           </div>
 
           <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600 sm:text-lg">
-            Information Systems graduate from UPN Veteran Jakarta (GPA: 3.83/4.00) and BNSP-Certified System Analyst with internship experience developing full-stack web applications, scalable RESTful APIs, and responsive interfaces.
+            Information Systems graduate from UPN Veteran Jakarta (GPA: 3.83/4.00) and BNSP-Certified System Analyst with internship experience developing full-stack web applications. Skilled in React.js, Next.js, Express.js, and NestJS, with hands-on experience in building responsive user interfaces, designing RESTful APIs, and implementing relational databases.
           </p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <Button href="#projects">

@@ -13,10 +13,10 @@ function About() {
         <div className="grid gap-5 lg:grid-cols-[1.25fr_0.75fr]">
           <Reveal className="glass-panel rounded-[2rem] p-6 sm:p-8">
             <p className="text-lg leading-9 text-slate-600">
-              I am an Information Systems graduate from Universitas Pembangunan Nasional “Veteran” Jakarta (GPA: 3.83/4.00) and a BNSP-Certified System Analyst with internship experience developing full-stack web applications. Skilled in React.js, Next.js, Express.js, and NestJS, with hands-on experience in building responsive user interfaces, designing RESTful APIs, and implementing relational databases.
+              Information Systems graduate from UPN Veteran Jakarta (GPA: 3.83/4.00) and BNSP-Certified System Analyst with internship experience developing full-stack web applications. Skilled in React.js, Next.js, Express.js, and NestJS, with hands-on experience in building responsive user interfaces, designing RESTful APIs, and implementing relational databases.
             </p>
             <p className="mt-5 text-lg leading-9 text-slate-600">
-              Having contributed to enterprise platforms at PT Garuda Maintenance Facility AeroAsia, PT Sinergi Informatika Semen Indonesia, and KSM Android UPNVJ, I have proven experience working within cross-functional Agile teams to translate complex business requirements into clean, scalable software. I am actively seeking professional opportunities as a Junior Software Engineer or Web Developer to deliver robust and reliable web applications.
+              Experienced in working within cross-functional agile teams to translate business requirements into clean, scalable software. Actively seeking professional opportunities as a Junior Software Engineer or Web Developer to deliver robust and reliable web applications.
             </p>
           </Reveal>
           <Reveal delay={0.08} className="grid gap-5">
