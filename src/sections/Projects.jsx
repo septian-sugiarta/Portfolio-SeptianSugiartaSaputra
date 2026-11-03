@@ -16,16 +16,15 @@ const projectFilters = [
   { key: "uiux", label: "UI/UX & Prototyping" },
 ];
 
-function ProjectThumbnail({ accent, title, metric, label, coverImage, cardLogo }) {
+function ProjectThumbnail({ accent, title, metric, label, coverImage, cardLogo, objectPosition = "object-center" }) {
   if (coverImage) {
     return (
       <div className="relative aspect-[16/10] overflow-hidden rounded-2xl border border-stone-800/80 bg-stone-900/60">
         <img
           src={coverImage}
-          alt={`${title} splash screen`}
-          className="h-full w-full object-cover object-top transition duration-500 group-hover:scale-105"
+          alt={`${title} preview`}
+          className={`h-full w-full object-cover ${objectPosition} transition duration-500 group-hover:scale-105`}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-stone-950/60 via-transparent to-transparent pointer-events-none" />
       </div>
     );
   }
@@ -123,7 +122,7 @@ function MockupModal({ project, activeIndex, onClose, onNext, onPrevious, onSele
                         key={activeMockup.image}
                         src={activeMockup.image}
                         alt={`${project.title} ${activeMockup.title} mockup`}
-                        className="h-full w-full object-cover object-top"
+                        className="h-full w-full object-cover object-center"
                         initial={{ opacity: 0, y: 12 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.2 }}
@@ -338,6 +337,7 @@ function Projects() {
                         label={activeProject.label}
                         coverImage={activeProject.coverImage}
                         cardLogo={activeProject.cardLogo}
+                        objectPosition={activeProject.objectPosition || "object-center"}
                       />
 
                       {/* Project Meta & Content */}

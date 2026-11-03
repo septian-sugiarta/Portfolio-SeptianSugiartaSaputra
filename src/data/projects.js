@@ -14,6 +14,7 @@ export const projects = [
     group: "web",
     primaryAction: "Demo",
     coverImage: "/assets/projects/scabitren/apple-splash.png",
+    objectPosition: "object-center",
   },
   {
     title: "S-Mart",
@@ -31,6 +32,7 @@ export const projects = [
     primaryAction: "Prototype",
     secondaryAction: "Case Study",
     coverImage: "/assets/projects/smart/Onboarding.png",
+    objectPosition: "object-center",
     mockups: [
       { title: "Onboarding", image: "/assets/projects/smart/Onboarding.png" },
       { title: "Login", image: "/assets/projects/smart/Login.png" },
@@ -81,6 +83,7 @@ export const projects = [
     primaryAction: "Prototype",
     secondaryAction: "Pitch Deck",
     coverImage: "/assets/projects/terrafit/splash screen.png",
+    objectPosition: "object-center",
     scrollableMockups: true,
     mockups: [
       { title: "Splash Screen", image: "/assets/projects/terrafit/splash screen.png" },
@@ -105,6 +108,7 @@ export const projects = [
     group: "uiux",
     primaryAction: "Prototype",
     coverImage: "/assets/projects/mavera/Dashboard.png",
+    objectPosition: "object-center",
     isDesktop: true,
     mockups: [
       { title: "Dashboard", image: "/assets/projects/mavera/Dashboard.png" },
