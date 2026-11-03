@@ -19,7 +19,7 @@ const projectFilters = [
 function ProjectThumbnail({ accent, title, metric, label, coverImage, cardLogo, objectPosition = "object-center" }) {
   if (coverImage) {
     return (
-      <div className="relative aspect-[16/10] overflow-hidden rounded-2xl border border-stone-800/80 bg-stone-900/60">
+      <div className="relative aspect-[16/10] overflow-hidden rounded-2xl border border-stone-800 bg-[#141416]">
         <img
           src={coverImage}
           alt={`${title} preview`}
@@ -31,13 +31,10 @@ function ProjectThumbnail({ accent, title, metric, label, coverImage, cardLogo, 
 
   if (cardLogo) {
     return (
-      <div className="relative aspect-[16/10] overflow-hidden rounded-2xl border border-stone-800/80 bg-gradient-to-b from-stone-900 to-stone-950 flex flex-col items-center justify-center p-6 text-center select-none shadow-inner">
-        {/* Subtle warm amber ambient glow */}
-        <div className="absolute inset-0 bg-amber-500/5 blur-xl animate-pulse" />
-        
+      <div className="relative aspect-[16/10] overflow-hidden rounded-2xl border border-stone-800 bg-[#141416] flex flex-col items-center justify-center p-6 text-center select-none shadow-inner">
         {/* Text Logo Wrapper */}
         <div className="relative z-10 flex flex-col items-center gap-2">
-          <h4 className="text-2xl sm:text-3xl font-black tracking-wider bg-gradient-to-r from-amber-200 via-amber-400 to-orange-400 bg-clip-text text-transparent uppercase">
+          <h4 className="text-2xl sm:text-3xl font-black tracking-wider text-amber-400 uppercase">
             {cardLogo.title}
           </h4>
           <p className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.22em] text-stone-400">
@@ -49,15 +46,14 @@ function ProjectThumbnail({ accent, title, metric, label, coverImage, cardLogo, 
   }
 
   return (
-    <div className="relative aspect-[16/10] overflow-hidden rounded-2xl border border-stone-800 bg-stone-900">
-      <div className={`absolute inset-0 bg-gradient-to-br ${accent} opacity-20`} />
-      <div className="absolute inset-x-4 top-4 flex items-center justify-between rounded-xl border border-stone-700/60 bg-stone-900/80 p-2.5 backdrop-blur-sm">
+    <div className="relative aspect-[16/10] overflow-hidden rounded-2xl border border-stone-800 bg-[#141416]">
+      <div className="absolute inset-x-4 top-4 flex items-center justify-between rounded-xl border border-stone-700/60 bg-stone-900 p-2.5">
         <span className="size-2 rounded-full bg-amber-400" />
         <span className="text-[10px] font-bold uppercase tracking-widest text-stone-400">
           Curated Showcase
         </span>
       </div>
-      <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between rounded-xl border border-stone-800 bg-stone-900/90 p-3 shadow-md">
+      <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between rounded-xl border border-stone-800 bg-stone-900 p-3 shadow-md">
         <span className="text-xs font-bold text-stone-200">{title}</span>
         <span className="text-sm font-mono font-bold text-amber-400">{metric}</span>
       </div>
@@ -94,7 +90,7 @@ function MockupModal({ project, activeIndex, onClose, onNext, onPrevious, onSele
           </button>
 
           {/* Interactive Screen Display */}
-          <div className="relative flex items-center justify-center overflow-hidden bg-stone-900/70 border-b lg:border-b-0 lg:border-r border-stone-800 p-4 sm:p-6 min-h-[320px]">
+          <div className="relative flex items-center justify-center overflow-hidden bg-stone-900 border-b lg:border-b-0 lg:border-r border-stone-800 p-4 sm:p-6 min-h-[320px]">
             <div className="relative z-[1] flex w-full max-h-[60vh] items-center justify-center">
               {project.isDesktop ? (
                 <div className="relative mx-auto w-full max-w-xl aspect-[16/10] flex flex-col justify-center">
@@ -178,7 +174,7 @@ function MockupModal({ project, activeIndex, onClose, onNext, onPrevious, onSele
               <button
                 type="button"
                 onClick={onNext}
-                className="focus-ring inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-amber-500 to-amber-600 px-4 py-2.5 text-xs font-bold text-stone-950 hover:from-amber-400 hover:to-amber-500 transition shadow-md shadow-amber-500/20 cursor-pointer"
+                className="focus-ring inline-flex items-center gap-1.5 rounded-full bg-amber-500 px-4 py-2.5 text-xs font-bold text-stone-950 hover:bg-amber-400 transition shadow-md shadow-amber-500/20 cursor-pointer"
               >
                 Next <HiChevronRight />
               </button>
@@ -278,16 +274,16 @@ function Projects() {
         />
 
         <Reveal>
-          {/* Main Craft Studio Container: Warm Deep Obsidian & Raw Umber */}
+          {/* Main Craft Studio Container: Solid Deep Obsidian (1 Solid Color) */}
           <div
-            className="overflow-hidden rounded-[2.2rem] sm:rounded-[2.6rem] border border-stone-800/90 bg-[#161514] shadow-2xl shadow-stone-900/40"
+            className="overflow-hidden rounded-[2.2rem] sm:rounded-[2.6rem] border border-stone-800 bg-[#161514] shadow-2xl shadow-stone-950/40"
             onMouseEnter={() => setIsPaused(true)}
             onMouseLeave={() => setIsPaused(false)}
           >
-            {/* Top Navigation & Filter Bar */}
-            <div className="flex flex-col gap-4 border-b border-stone-800/90 px-5 sm:px-8 py-4 sm:flex-row sm:items-center sm:justify-between bg-stone-950/70">
+            {/* Top Navigation & Filter Bar - Solid Background */}
+            <div className="flex flex-col gap-4 border-b border-stone-800 px-5 sm:px-8 py-4 sm:flex-row sm:items-center sm:justify-between bg-[#141312]">
               <div className="flex items-center gap-2.5 font-mono text-xs text-amber-400">
-                <span className="size-2 rounded-full bg-amber-400 animate-pulse" />
+                <span className="size-2 rounded-full bg-amber-400" />
                 <span className="tracking-wider uppercase font-bold text-stone-300">
                   Curated Catalog <span className="text-stone-500 hidden sm:inline">· 2024–2026</span>
                 </span>
@@ -303,8 +299,8 @@ function Projects() {
                     aria-pressed={activeFilter === filter.key}
                     className={`focus-ring rounded-full px-3.5 py-1.5 text-xs font-bold transition cursor-pointer ${
                       activeFilter === filter.key
-                        ? "bg-gradient-to-r from-amber-500 to-amber-600 text-stone-950 shadow-md shadow-amber-500/20"
-                        : "bg-stone-900/90 text-stone-400 hover:bg-stone-800 hover:text-stone-200 border border-stone-800"
+                        ? "bg-amber-500 text-stone-950 shadow-sm"
+                        : "bg-stone-900 text-stone-400 hover:bg-stone-800 hover:text-stone-200 border border-stone-800"
                     }`}
                   >
                     {filter.label}
@@ -313,12 +309,10 @@ function Projects() {
               </div>
             </div>
 
-            {/* Split Showcase Layout: Left Spotlight & Right Queue */}
+            {/* Split Showcase Layout: Solid Left Spotlight & Solid Right Queue */}
             <div className="grid lg:grid-cols-[1.08fr_0.72fr]">
-              {/* Left Spotlight Pane */}
-              <div className="relative min-h-[580px] sm:min-h-[640px] overflow-hidden bg-stone-900/90 p-5 sm:p-8 flex flex-col justify-between">
-                <div className={`absolute inset-0 bg-gradient-to-br ${activeProject.accent} opacity-20 pointer-events-none`} />
-
+              {/* Left Spotlight Pane - 1 Solid Color Background, No Gradient */}
+              <div className="relative min-h-[580px] sm:min-h-[640px] overflow-hidden bg-[#161514] p-5 sm:p-8 flex flex-col justify-between">
                 <AnimatePresence mode="wait">
                   <motion.article
                     key={`${activeFilter}-${activeProject.title}`}
@@ -370,7 +364,7 @@ function Projects() {
                           {activeProject.stack.map((tech) => (
                             <span
                               key={tech}
-                              className="rounded-lg border border-stone-700/80 bg-stone-950/80 px-2.5 py-1 text-[11px] font-semibold text-stone-300"
+                              className="rounded-lg border border-stone-800 bg-stone-900 px-2.5 py-1 text-[11px] font-semibold text-stone-300"
                             >
                               {tech}
                             </span>
@@ -380,12 +374,12 @@ function Projects() {
                     </div>
 
                     {/* Action Button */}
-                    <div className="mt-7 pt-4 border-t border-stone-800/80">
+                    <div className="mt-7 pt-4 border-t border-stone-800">
                       {activeProject.mockups ? (
                         <button
                           type="button"
                           onClick={() => openGallery(activeProject)}
-                          className="focus-ring inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-amber-500 to-amber-600 px-5 py-3 text-xs sm:text-sm font-bold text-stone-950 transition hover:from-amber-400 hover:to-amber-500 shadow-lg shadow-amber-500/20 cursor-pointer"
+                          className="focus-ring inline-flex items-center justify-center gap-2 rounded-full bg-amber-500 px-5 py-3 text-xs sm:text-sm font-bold text-stone-950 transition hover:bg-amber-400 shadow-md shadow-amber-500/10 cursor-pointer"
                         >
                           <span>Explore Interface</span>
                           <HiArrowTopRightOnSquare className="text-base" />
@@ -395,7 +389,7 @@ function Projects() {
                           href={activeProject.liveUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="focus-ring inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-amber-500 to-amber-600 px-5 py-3 text-xs sm:text-sm font-bold text-stone-950 transition hover:from-amber-400 hover:to-amber-500 shadow-lg shadow-amber-500/20"
+                          className="focus-ring inline-flex items-center justify-center gap-2 rounded-full bg-amber-500 px-5 py-3 text-xs sm:text-sm font-bold text-stone-950 transition hover:bg-amber-400 shadow-md shadow-amber-500/10"
                         >
                           <span>Open Live Demo</span>
                           <HiArrowTopRightOnSquare className="text-base" />
@@ -406,9 +400,9 @@ function Projects() {
                 </AnimatePresence>
               </div>
 
-              {/* Right Queue Sidebar */}
+              {/* Right Queue Sidebar - 1 Solid Harmonious Color */}
               <aside
-                className="flex flex-col justify-between border-t lg:border-t-0 lg:border-l border-stone-800/90 bg-[#121110] p-5 sm:p-7"
+                className="flex flex-col justify-between border-t lg:border-t-0 lg:border-l border-stone-800 bg-[#141312] p-5 sm:p-7"
                 aria-label="Project catalog list"
               >
                 <div>
@@ -471,7 +465,7 @@ function Projects() {
                   <div className="mb-4 h-1 overflow-hidden rounded-full bg-stone-800">
                     <motion.div
                       key={`${activeFilter}-${safeProjectIndex}-${isPaused}`}
-                      className="h-full origin-left bg-gradient-to-r from-amber-500 to-orange-400"
+                      className="h-full origin-left bg-amber-500"
                       initial={{ scaleX: 0 }}
                       animate={{ scaleX: isPaused ? 0 : 1 }}
                       transition={{ duration: isPaused ? 0 : 5.5, ease: "linear" }}
