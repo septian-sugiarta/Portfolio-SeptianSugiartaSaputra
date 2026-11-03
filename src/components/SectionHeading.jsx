@@ -10,15 +10,15 @@ function SectionHeading({ eyebrow, title, description, align = "left" }) {
       }`}
     >
       {eyebrow ? (
-        <p className="mb-2 text-xs font-black uppercase tracking-wider text-indigo-600">
+        <p className="mb-2 text-xs font-black uppercase tracking-wider text-amber-700">
           {eyebrow}
         </p>
       ) : null}
-      <h2 className="text-2xl sm:text-3xl md:text-4xl font-black tracking-tight text-slate-900">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-black tracking-tight text-stone-900">
         {title}
       </h2>
       {description ? (
-        <p className="mt-3 text-sm sm:text-base leading-relaxed text-slate-600">
+        <p className="mt-3 text-sm sm:text-base leading-relaxed text-stone-600">
           {description}
         </p>
       ) : null}

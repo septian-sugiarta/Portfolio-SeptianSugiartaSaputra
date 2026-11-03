@@ -1,9 +1,9 @@
 function Button({ href, children, variant = "primary", className = "" }) {
   const variants = {
     primary:
-      "border-transparent bg-indigo-600 text-white shadow-lg shadow-indigo-600/20 hover:-translate-y-0.5 hover:bg-indigo-700",
+      "border-stone-900 bg-stone-900 text-stone-50 shadow-md shadow-stone-900/15 hover:-translate-y-0.5 hover:bg-stone-800",
     secondary:
-      "border-slate-200 bg-white text-slate-700 hover:-translate-y-0.5 hover:border-slate-300 hover:bg-slate-50",
+      "border-stone-300/90 bg-white text-stone-800 hover:-translate-y-0.5 hover:border-amber-600 hover:text-amber-700 hover:bg-stone-50/70",
   };
 
   return (
