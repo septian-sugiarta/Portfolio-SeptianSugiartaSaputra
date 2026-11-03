@@ -1,12 +1,14 @@
 /**
  * Focus CV Data - Single Source of Truth (SSOT)
- * Based on Final CV improvements (Septian Sugiarta Saputra)
+ * Aligned with the latest finalized CV (Septian Sugiarta Saputra)
  */
 
 export const cvFocusData = {
   personalInfo: {
     fullName: "Septian Sugiarta Saputra",
-    phone: "081574364200",
+    location: "Jakarta Pusat, Indonesia",
+    phone: "+6281574364200",
+    phoneDisplay: "081574364200",
     email: "septiansugiarta3@gmail.com",
     linkedin: "https://linkedin.com/in/septiansugiartasaputra",
     linkedinDisplay: "linkedin.com/in/septiansugiartasaputra",
@@ -17,7 +19,7 @@ export const cvFocusData = {
     targetRoles: ["Junior Software Engineer", "Web Developer"],
   },
   summary: {
-    en: "Information Systems graduate from UPN Veteran Jakarta (GPA: 3.83/4.00) and BNSP-Certified System Analyst with internship experience developing full-stack web applications. Skilled in React.js, Next.js, Express.js, and NestJS, with hands-on experience in building responsive user interfaces, designing RESTful APIs, and implementing relational databases. Experienced in working within cross-functional agile teams to translate business requirements into clean, scalable software. Actively seeking professional opportunities as a Junior Software Engineer or Web Developer to deliver robust and reliable web applications.",
+    en: "Information Systems graduate specializing in Full-Stack Web Development, with hands-on experience building scalable web applications and enterprise dashboards. Skilled in developing responsive front-end interfaces (React.js, Next.js) and architecting robust back-end systems (Express.js, NestJS, RESTful APIs). Adept at collaborating within cross-functional Agile teams to translate complex business requirements into clean, efficient, and reliable software. Actively seeking opportunities as a Junior Software Engineer or Web Developer to deliver impactful digital products and drive technical innovation.",
   },
   skills: {
     programmingLanguages: ["JavaScript", "TypeScript", "Python"],
@@ -43,10 +45,10 @@ export const cvFocusData = {
       { name: "English", level: "Professional Working Proficiency" },
     ],
   },
-  internshipExperience: [
+  workExperience: [
     {
       company: "PT Garuda Maintenance Facility AeroAsia",
-      role: "Full Stack Developer",
+      role: "Full Stack Developer Intern",
       location: "Tangerang, Indonesia",
       period: "Apr 2025 - Aug 2025",
       highlights: [
@@ -92,7 +94,7 @@ export const cvFocusData = {
         "Architected a scalable relational database schema comprising 45+ tables, and developed a robust backend infrastructure with 90+ API routes and 75+ controllers for secure data processing.",
         "Directed the end-to-end development lifecycle within an Agile/Scrum framework, authoring and executing 120+ comprehensive blackbox test cases across all access levels to guarantee high system reliability.",
       ],
-      techStack: ["React.js", "Express.js", "Node.js", "Relational Database", "RESTful API", "Blackbox Testing", "Agile/Scrum"],
+      techStack: ["React.js", "Express.js", "Node.js", "MySQL", "RESTful API", "Blackbox Testing", "Agile/Scrum"],
     },
     {
       title: "S-Mart",
@@ -104,7 +106,7 @@ export const cvFocusData = {
         "Mapped end-to-end application logic and user flows for item scanning, cart management, and checkout, ensuring intuitive navigation and seamless state transitions.",
         "Delivered high-fidelity interactive prototypes and standardized CSS variables (typography, spacing, color palettes) to optimize developer handoff and ensure pixel-perfect integration.",
       ],
-      techStack: ["Design System", "Figma", "UI/UX Prototyping", "User Flows", "Frontend Prototyping"],
+      techStack: ["Design System", "Figma", "UI/UX Prototyping", "User Flows", "RFID Concept"],
     },
   ],
   education: {

@@ -3,33 +3,37 @@ import SectionHeading from "../components/SectionHeading.jsx";
 
 function About() {
   return (
-    <section id="about" className="relative py-24 sm:py-28">
+    <section id="about" className="relative py-20 sm:py-28 border-t border-slate-200/60 bg-white/50">
       <div className="section-shell">
         <SectionHeading
-          eyebrow="About me"
-          title="Building robust, practical digital products through clean code and scalable architecture."
-          description="My academic background, BNSP System Analyst certification, and full-stack internship experience shape how I design and build modern software solutions."
+          eyebrow="Professional Background"
+          title="Building clean, reliable software backed by structured system analysis."
+          description="A strong foundation in computer science and information systems, combined with hands-on enterprise internship experience and industry-standard BNSP certification."
         />
-        <div className="grid gap-5 lg:grid-cols-[1.25fr_0.75fr]">
-          <Reveal className="glass-panel rounded-[2rem] p-6 sm:p-8">
-            <p className="text-lg leading-9 text-slate-600">
-              Information Systems graduate from UPN Veteran Jakarta (GPA: 3.83/4.00) and BNSP-Certified System Analyst with internship experience developing full-stack web applications. Skilled in React.js, Next.js, Express.js, and NestJS, with hands-on experience in building responsive user interfaces, designing RESTful APIs, and implementing relational databases.
+        <div className="grid gap-6 lg:grid-cols-[1.25fr_0.75fr] items-start">
+          <Reveal className="rounded-3xl border border-slate-200/90 bg-white p-6 sm:p-9 shadow-sm">
+            <h3 className="text-xl font-black text-slate-900 mb-4">Summary & Engineering Philosophy</h3>
+            <p className="text-base sm:text-lg leading-relaxed sm:leading-8 text-slate-600">
+              Information Systems graduate specializing in Full-Stack Web Development, with hands-on experience building scalable web applications and enterprise dashboards. Skilled in developing responsive front-end interfaces (React.js, Next.js) and architecting robust back-end systems (Express.js, NestJS, RESTful APIs).
             </p>
-            <p className="mt-5 text-lg leading-9 text-slate-600">
-              Experienced in working within cross-functional agile teams to translate business requirements into clean, scalable software. Actively seeking professional opportunities as a Junior Software Engineer or Web Developer to deliver robust and reliable web applications.
+            <p className="mt-4 text-base sm:text-lg leading-relaxed sm:leading-8 text-slate-600">
+              Adept at collaborating within cross-functional Agile teams to translate complex business requirements into clean, efficient, and reliable software. Actively seeking opportunities as a Junior Software Engineer or Web Developer to deliver impactful digital products and drive technical innovation.
             </p>
           </Reveal>
-          <Reveal delay={0.08} className="grid gap-5">
+
+          <Reveal delay={0.08} className="grid gap-4">
             {[
-              ["Education", 'Information Systems, UPNVJ (GPA: 3.83)'],
-              ["Certification", "BNSP-Certified System Analyst"],
-              ["Target Roles", "Junior Software Engineer / Web Developer"],
-            ].map(([label, value]) => (
-              <div key={label} className="rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-sm transition hover:border-indigo-200 hover:shadow-md">
-                <p className="text-sm font-semibold uppercase tracking-[0.22em] text-indigo-600">
+              ["Education", 'S1 Sistem Informasi, UPNVJ', "GPA: 3.83 / 4.00 (Sep 2022 - Sep 2026)"],
+              ["Certification", "System Analyst - BNSP", "Badan Nasional Sertifikasi Profesi (Feb 2026)"],
+              ["Location", "Jakarta Pusat, Indonesia", "Open for on-site & hybrid opportunities"],
+              ["Target Roles", "Junior Software Engineer", "Web Developer · Full-Stack Developer"],
+            ].map(([label, title, subtitle]) => (
+              <div key={label} className="rounded-2xl border border-slate-200/80 bg-white p-5 shadow-2xs transition hover:border-indigo-300 hover:shadow-md">
+                <p className="text-xs font-bold uppercase tracking-wider text-indigo-600">
                   {label}
                 </p>
-                <p className="mt-3 text-xl font-bold leading-7 text-slate-900">{value}</p>
+                <p className="mt-1.5 text-base sm:text-lg font-bold text-slate-900">{title}</p>
+                <p className="mt-0.5 text-xs text-slate-500 font-medium">{subtitle}</p>
               </div>
             ))}
           </Reveal>

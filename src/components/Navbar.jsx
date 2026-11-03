@@ -18,20 +18,20 @@ function Navbar() {
   }, []);
 
   const navClass = isScrolled
-    ? "border-slate-200 bg-white/85 shadow-lg shadow-slate-100/50"
-    : "border-slate-100 bg-white/40";
+    ? "border-slate-200/90 bg-white/90 shadow-md shadow-slate-200/50"
+    : "border-slate-200/60 bg-white/70";
 
   return (
-    <header className="fixed inset-x-0 top-0 z-40 px-4 pt-4">
+    <header className="fixed inset-x-0 top-0 z-40 px-4 pt-3 sm:pt-4">
       <nav
-        className={`section-shell flex h-16 items-center justify-between rounded-full border px-4 backdrop-blur-2xl transition duration-300 ${navClass}`}
+        className={`section-shell flex h-14 sm:h-16 items-center justify-between rounded-full border px-4 backdrop-blur-2xl transition duration-300 ${navClass}`}
       >
-        <a href="#home" className="focus-ring flex items-center gap-3 rounded-full">
-          <span className="grid size-9 place-items-center rounded-full border border-indigo-200 bg-indigo-600 text-[11px] font-black text-white shadow-lg shadow-indigo-500/10">
+        <a href="#home" className="focus-ring flex items-center gap-2.5 rounded-full">
+          <span className="grid size-8 sm:size-9 place-items-center rounded-full border border-indigo-200 bg-indigo-600 text-[11px] font-black text-white shadow-md shadow-indigo-500/20">
             SS
           </span>
-          <span className="hidden text-sm font-bold tracking-wide text-slate-800 sm:inline">
-            Portfolio Website
+          <span className="text-sm font-black tracking-tight text-slate-800">
+            Septian Sugiarta
           </span>
         </a>
 
@@ -40,7 +40,7 @@ function Navbar() {
             <a
               key={item.id}
               href={`#${item.id}`}
-              className={`focus-ring rounded-full px-4 py-2 text-sm font-semibold transition ${
+              className={`focus-ring rounded-full px-4 py-2 text-xs font-bold transition ${
                 activeSection === item.id
                   ? "bg-indigo-600 text-white"
                   : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
@@ -53,16 +53,16 @@ function Navbar() {
 
         <a
           href="#contact"
-          className="focus-ring hidden rounded-full border border-indigo-600/30 bg-indigo-50 px-4 py-2 text-sm font-bold text-indigo-700 transition hover:border-indigo-600/60 hover:bg-indigo-100/80 md:inline-flex"
+          className="focus-ring hidden rounded-full border border-indigo-600/30 bg-indigo-50 px-4 py-2 text-xs font-bold text-indigo-700 transition hover:border-indigo-600/60 hover:bg-indigo-100 md:inline-flex"
         >
-          Let&apos;s Talk
+          Let&apos;s Connect
         </a>
 
         <button
           type="button"
           aria-label="Toggle navigation"
           onClick={() => setIsOpen((value) => !value)}
-          className="focus-ring grid size-10 place-items-center rounded-full border border-slate-200 bg-slate-100/55 text-xl text-slate-700 lg:hidden"
+          className="focus-ring grid size-9 sm:size-10 place-items-center rounded-full border border-slate-200 bg-slate-100/70 text-lg text-slate-700 lg:hidden cursor-pointer"
         >
           {isOpen ? <HiOutlineX /> : <HiMenuAlt3 />}
         </button>
@@ -71,18 +71,18 @@ function Navbar() {
       <AnimatePresence>
         {isOpen ? (
           <motion.div
-            initial={{ opacity: 0, y: -12, scale: 0.98 }}
+            initial={{ opacity: 0, y: -10, scale: 0.98 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: -12, scale: 0.98 }}
-            transition={{ duration: 0.22 }}
-            className="section-shell mt-3 overflow-hidden rounded-3xl border border-slate-200 bg-white/95 p-2 shadow-2xl shadow-slate-200/50 backdrop-blur-2xl lg:hidden"
+            exit={{ opacity: 0, y: -10, scale: 0.98 }}
+            transition={{ duration: 0.2 }}
+            className="section-shell mt-2.5 overflow-hidden rounded-3xl border border-slate-200 bg-white/95 p-3 shadow-2xl shadow-slate-200/50 backdrop-blur-2xl lg:hidden"
           >
             {navigationItems.map((item) => (
               <a
                 key={item.id}
                 href={`#${item.id}`}
                 onClick={() => setIsOpen(false)}
-                className={`focus-ring flex rounded-2xl px-4 py-3 text-sm font-semibold transition ${
+                className={`focus-ring flex rounded-2xl px-4 py-3 text-sm font-bold transition ${
                   activeSection === item.id
                     ? "bg-indigo-600 text-white"
                     : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"

@@ -1,8 +1,9 @@
 export const experiences = [
   {
-    role: "Full Stack Developer",
+    role: "Full Stack Developer Intern",
     period: "Apr 2025 - Aug 2025",
     type: "PT Garuda Maintenance Facility AeroAsia",
+    location: "Tangerang, Indonesia",
     group: "web",
     stack: ["AngularJS", "NestJS", "Microservices", "RESTful API", "Relational Database", "Agile"],
     highlights: [
@@ -15,6 +16,7 @@ export const experiences = [
     role: "Front-End Developer",
     period: "Mar 2024 - Nov 2024",
     type: "KSM Android UPNVJ",
+    location: "Jakarta, Indonesia",
     group: "web",
     stack: ["Next.js", "TailwindCSS", "Shadcn/ui", "REST API", "Responsive Web Design", "Agile"],
     highlights: [
@@ -27,6 +29,7 @@ export const experiences = [
     role: "Python Programmer",
     period: "May 2024 - Oct 2024",
     type: "PT Sinergi Informatika Semen Indonesia",
+    location: "Jakarta, Indonesia",
     group: "web",
     stack: ["Python", "Enterprise LMS", "Git", "Bug Fixing", "Agile"],
     highlights: [
@@ -39,6 +42,7 @@ export const experiences = [
     role: "UI/UX & Frontend Prototyper",
     period: "Jan 2026 - May 2026",
     type: "S-Mart",
+    location: "Jakarta, Indonesia",
     group: "uiux",
     stack: ["Design System", "Figma", "UI/UX Prototyping", "User Flows", "RFID Concept"],
     highlights: [
@@ -51,6 +55,7 @@ export const experiences = [
     role: "UI/UX Designer",
     period: "Oct 2024 - Dec 2024",
     type: "TERRAFIT",
+    location: "Jakarta, Indonesia",
     group: "uiux",
     stack: ["UI/UX Design", "Sustainable Fashion", "Interactive Prototype", "Figma"],
     highlights: [
@@ -63,6 +68,7 @@ export const experiences = [
     role: "UI/UX Designer",
     period: "Dec 2024 - Jan 2025",
     type: "Mavera's Website",
+    location: "Jakarta, Indonesia",
     group: "uiux",
     stack: ["UI/UX Design", "Restaurant Website", "Reservation Flow", "Figma"],
     highlights: [

@@ -5,16 +5,16 @@ import { contactLinks } from "../data/contact.js";
 
 function Contact() {
   return (
-    <section id="contact" className="py-24 sm:py-28">
+    <section id="contact" className="py-20 sm:py-28 border-t border-slate-200/60 bg-slate-50/70">
       <div className="section-shell">
-        <div className="glass-panel overflow-hidden rounded-[2.2rem] p-6 sm:p-10">
+        <div className="overflow-hidden rounded-3xl sm:rounded-[2.5rem] border border-slate-200/90 bg-white p-6 sm:p-12 shadow-sm">
           <SectionHeading
-            eyebrow="Contact"
-            title="Open to professional opportunities and collaboration."
-            description="Actively seeking professional opportunities as a Junior Software Engineer or Web Developer. Reach out for career opportunities, technical discussions, or collaborations."
+            eyebrow="Get In Touch"
+            title="Let's connect for opportunities & engineering discussions."
+            description="Actively seeking opportunities as a Junior Software Engineer or Web Developer to deliver impactful digital products and drive technical innovation. Reach out directly through any of the channels below."
             align="center"
           />
-          <div className="grid gap-4 md:grid-cols-2">
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 mt-8">
             {contactLinks.map((link, index) => {
               const Icon = link.icon;
               return (
@@ -23,18 +23,18 @@ function Contact() {
                     href={link.href}
                     target={link.href.startsWith("http") ? "_blank" : undefined}
                     rel={link.href.startsWith("http") ? "noreferrer" : undefined}
-                    className="focus-ring group flex min-h-28 items-center justify-between gap-4 rounded-[1.5rem] border border-slate-200 bg-slate-50 p-5 transition duration-300 hover:-translate-y-1 hover:border-indigo-200 hover:bg-indigo-50/30 hover:shadow-md"
+                    className="focus-ring group flex min-h-24 items-center justify-between gap-4 rounded-2xl border border-slate-200/80 bg-slate-50/50 p-4 sm:p-5 transition duration-300 hover:-translate-y-1 hover:border-indigo-300 hover:bg-white hover:shadow-lg hover:shadow-indigo-500/5"
                   >
-                    <div className="flex min-w-0 items-center gap-4">
-                      <span className="grid size-12 shrink-0 place-items-center rounded-2xl bg-indigo-50 text-2xl text-indigo-600 transition group-hover:bg-indigo-600 group-hover:text-white shadow-sm">
+                    <div className="flex min-w-0 items-center gap-3.5">
+                      <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-indigo-50 text-xl text-indigo-600 transition group-hover:bg-indigo-600 group-hover:text-white shadow-2xs">
                         <Icon />
                       </span>
                       <div className="min-w-0">
-                        <p className="font-black text-slate-900">{link.label}</p>
-                        <p className="mt-1 truncate text-sm text-slate-600">{link.value}</p>
+                        <p className="text-xs font-bold uppercase tracking-wider text-slate-400">{link.label}</p>
+                        <p className="mt-0.5 truncate text-sm font-bold text-slate-800 group-hover:text-indigo-600 transition">{link.value}</p>
                       </div>
                     </div>
-                    <HiArrowRight className="shrink-0 text-xl text-slate-400 transition group-hover:translate-x-1 group-hover:text-indigo-600" />
+                    <HiArrowRight className="shrink-0 text-lg text-slate-400 transition group-hover:translate-x-1 group-hover:text-indigo-600" />
                   </a>
                 </Reveal>
               );

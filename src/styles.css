@@ -4,7 +4,7 @@
 
 :root {
   color-scheme: light;
-  font-family: "Satoshi", "Inter", system-ui, sans-serif;
+  font-family: "Satoshi", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background: #f8fafc;
   scroll-behavior: smooth;
 }
@@ -21,13 +21,9 @@ body {
   min-width: 320px;
   margin: 0;
   background-color: #f8fafc;
-  /* Light grid pattern to represent IT/Engineering field */
-  background-image: 
-    linear-gradient(rgba(79, 70, 229, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(79, 70, 229, 0.03) 1px, transparent 1px);
-  background-size: 32px 32px;
-  background-position: center;
-  color: #1e293b;
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 button,
@@ -37,11 +33,11 @@ a {
 
 ::selection {
   color: #ffffff;
-  background: rgba(79, 70, 229, 0.35);
+  background: rgba(79, 70, 229, 0.45);
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -49,35 +45,17 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-  border: 2px solid #f1f5f9;
   border-radius: 999px;
-  background: linear-gradient(180deg, #4f46e5, #3b82f6);
+  background: #cbd5e1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
 }
 
 .section-shell {
   width: min(1180px, calc(100% - 32px));
   margin-inline: auto;
-}
-
-.glass-panel {
-  border: 1px solid #e2e8f0;
-  background: #ffffff;
-  box-shadow: 0 10px 40px rgba(15, 23, 42, 0.04);
-}
-
-.gradient-text {
-  background: linear-gradient(135deg, #4f46e5 20%, #3b82f6 80%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-.aurora-field {
-  display: none;
-}
-
-.noise-layer {
-  display: none;
 }
 
 .focus-ring {
@@ -88,26 +66,13 @@ a {
   box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.38);
 }
 
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+/* Hide scrollbar for gallery thumbnails */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
 }
-
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #4f46e5 }
-}
-
-/* Typing effect styles */
-.typing-container {
-  display: inline-block;
-  overflow: hidden;
-  border-right: .15em solid #4f46e5;
-  white-space: nowrap;
-  letter-spacing: .02em;
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 @media (prefers-reduced-motion: reduce) {

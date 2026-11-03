@@ -1,5 +1,5 @@
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
+import { HiOutlineLocationMarker, HiOutlineMail } from "react-icons/hi";
 
 export const contactLinks = [
   {
@@ -7,6 +7,12 @@ export const contactLinks = [
     value: "septiansugiarta3@gmail.com",
     href: "mailto:septiansugiarta3@gmail.com",
     icon: HiOutlineMail,
+  },
+  {
+    label: "WhatsApp / Phone",
+    value: "+62 815-7436-4200",
+    href: "https://wa.me/6281574364200",
+    icon: FaWhatsapp,
   },
   {
     label: "LinkedIn",
@@ -21,9 +27,9 @@ export const contactLinks = [
     icon: FaGithub,
   },
   {
-    label: "WhatsApp / Phone",
-    value: "081574364200",
-    href: "https://wa.me/6281574364200",
-    icon: FaWhatsapp,
+    label: "Location",
+    value: "Jakarta Pusat, Indonesia",
+    href: "https://maps.google.com/?q=Jakarta+Pusat",
+    icon: HiOutlineLocationMarker,
   },
 ];
